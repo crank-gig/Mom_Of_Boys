@@ -92,6 +92,7 @@ img{
 /* -----------buttons--------------- */
 button{
     border: none; cursor: pointer;
+    background: none;
 }
 .butt a{
     text-decoration: none;
@@ -125,9 +126,8 @@ button{
     padding: 10px 20px 10px 10px;
 }
 .mobile-hamburger-icon{
-width: 40px; height: 40px;
-background: url("media/hamburger2.svg") center/cover no-repeat;
-cursor: pointer;
+    width: 40px; height: 40px;
+    cursor: pointer;
 }
 .home-top-bar .menu{
     position: fixed;
@@ -140,7 +140,6 @@ display: flex; justify-content: flex-end;
 }
 .menu .menu-close-btn{
 width: 30px; height: 30px;
-background: url("media/menu_close.svg") center/cover no-repeat;
 }
 .menu ul{
 list-style-type: none;    

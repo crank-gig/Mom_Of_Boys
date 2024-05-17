@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="Mother of Boys is a charitable organization dedicated to empowering mothers and families, providing support, resources, and education for maternal health and well-being. Join us in our mission to create a nurturing environment for mothers, ensuring healthier futures for their children and communities.">
+        <link href="contact.css" rel="stylesheet" type="text/css" charset="utf-8">
+
+        <!--font-->
+        <link href="https://fonts.cdnfonts.com/css/inter" rel="stylesheet"/>
+        <link href="https://fonts.cdnfonts.com/css/questrial" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/questrial" rel="stylesheet"> <!--Oswald font-->
+        <link href="https://fonts.cdnfonts.com/css/newsreader-2" rel="stylesheet"> <!--newsreader font-->
+        <link href="https://fonts.cdnfonts.com/css/lato" rel="stylesheet"> <!--lato font-->
+        <link href="https://fonts.cdnfonts.com/css/be-vietnam-pro" rel="stylesheet">  <!--be-vietnam-pro-->
+        <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">   <!--poppins-->
+        <link href="https://fonts.cdnfonts.com/css/berlin-sans-fb-demi" rel="stylesheet"> <!--berlins-->
+        <link href="https://fonts.cdnfonts.com/css/calibri-light" rel="stylesheet"> <!--calibri-->
+        <link href="https://fonts.cdnfonts.com/css/arial" rel="stylesheet"> <!--Arial-->
+                
+                
+
+        <link rel="stylesheet" href="fonts/helvetica-normal/stylesheet.css" type="text/css" charset="utf-8"/>
+        <link rel="manifest" href="manifest.json" />
+        <link rel="icon" type="image/png" href="https://res.cloudinary.com/dhbj763qc/image/upload/v1715961288/Mom_of_boys/favicon_mk9mhp.png">
+        <title>Mom of Boys</title>
+
+        <script src="base.js" defer></script>
+        <!--
+            <script src="https://www.google.com/recaptcha/api.js?render=6LfjFdMpAAAAAJvriBarTWu5SBo4_WvA9_-Rk5ZS"></script>
+        -->
+    </head>
+    <body>
+        <!--Top bar section-->
+        <div role="header" class="home-top-bar">
+            <div class="top-bar-logo" role="img" aria-label="Company Logo">
+                <img src="https://res.cloudinary.com/dhbj763qc/image/upload/v1715876093/Mom_of_boys/mob_logo_siea63.png" alt="Company icon" />
+            </div>
+            <div class="mobile-hamburger-icon" onclick=openMenu()></div>
+            <div class="menu">
+                <div class="menu-close-btn-wrapper mcbw">
+                    <button class="menu-close-btn" onclick=closeMenu()></button>
+                </div>
+                <ul>
+                    <li class="top-bar-home-link">
+                         <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="top-bar-about-link">
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li class="top-bar-contact-link">
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                    <!--
+                        <li>
+                            <a href="">
+                                Shop
+                            </a>
+                        </li>
+                        <li class="support-our-cause-link">
+                            <a href="support_our_cause.html">
+                                Support our cause
+                            </a>
+                        </li>   
+                    -->
+                </ul>
+            </div>
+        </div>
+        <!--top large thumbnail section-->
+        <div class="top-large-thumbnail">
+            <img src="https://res.cloudinary.com/dhbj763qc/image/upload/v1715859601/Mom_of_boys/IMG_4078_wegkhn.jpg" alt="Mom carrying a baby"/>
+            <div class="header-text">
+                <div class="header-text-tag">Have an issue?</div>
+                <div class="header-text-note"><span>Contact</span> <span>Us</span></div>
+            </div>
+        </div>
+        <!--form wrapper-->
+        <div class="form-backdrop">
+            <img src="https://res.cloudinary.com/dhbj763qc/image/upload/v1715859549/Mom_of_boys/IMG_4075_qqwjji.jpg" alt="Mom carring a baby"/>
+            <div class="contact-form-wrapper">
+                <div class="contact-form">
+                    <div class="tiny-tag">
+                        Get in touch
+                    </div>
+                    <div class="form-heading">
+                        Contact us
+                    </div>
+                    <!--form element wrappers-->
+                    <div class="first-name-wrapper input-wrapper">
+                        <label for="firstname">First Name</label>
+                        <input 
+                            type="text" 
+                            id="firstname" 
+                            maxlength="70" 
+                            placeholder="Enter first name"
+                            oninput=validateForm()
+                        />
+                        <div class="first-name-error input-error"></div>
+                    </div>
+                    <div class="last-name-wrapper input-wrapper">
+                        <label for="lastname">Last Name</label>
+                        <input 
+                            type="text" 
+                            id="lastname" 
+                            maxlength="70" 
+                            placeholder="Enter last name"
+                            oninput=validateForm()
+                        />
+                        <div class="last-name-error input-error"></div>
+                    </div>
+                    <div class="email-wrapper input-wrapper">
+                        <label for="email">Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            maxlength="100" 
+                            placeholder="Input email address"
+                            oninput=validateForm()
+                        />
+                        <div class="email-error input-error"></div>
+                    </div>
+                    <div class="message-wrapper input-wrapper">
+                        <label for="message">Message</label>
+                        <textarea 
+                            placeholder="Write us a brief message..." 
+                            maxlength="500" 
+                            id="message"
+                            oninput=stretchTextArea(event)
+                        >
+                        </textarea>
+                        <div class="message-error input-error"></div>
+                    </div>
+                    <div class="form-bottom-note">
+                        <div class="form-bottom-note-header">
+                            Note: Please read
+                        </div>
+                        <div class="form-bottom-note-message"> 
+                            To further enhance approval and quality reach-out from our team, 
+                            we kindly request that you reach out directly to our dedicated Support Team. 
+                            Our team of experts is available to guide you throughout your journey.
+                            Also do well to make the request with an active email address of yours.
+                            <br/>
+                            <span>
+                                Clicking on the <strong>Submit</strong> button does that.
+                            </span>
+                        </div>
+    
+                    </div>
+                    <button 
+                        type="button" 
+                        class="submit-button"
+                        onclick=submitMessage() 
+                    >
+                        Submit
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <!--footer section-->
+        <footer>
+            <div class="inner-footer-wrapper">
+                <div>
+                    <div class="top-bar-logo">
+                        <img src="https://res.cloudinary.com/dhbj763qc/image/upload/v1715876093/Mom_of_boys/mob_logo_siea63.png" alt="Company icon" />
+                    </div>
+                    <div class="footer-note"> 
+                        Nurturing Families, Empowering Futures. 
+                        Supporting mothers through postpartum care, 
+                        fostering child education, and building stronger communities. 
+                        Together, we shape tomorrow.
+                    </div>
+                </div>
+                <div class="footer-site-links">
+                    <div class="footer-links-heading">Explore</div>
+                    <ul>
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                Shop
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social-links">
+                    <div class="footer-links-heading">Social</div>
+                    <ul>
+                        <li class="tik-tok">
+                            <a target="_blank" href="https://www.tiktok.com/@momofboysnigeria?_t=8m0RKIcOKrO&_r=1" role="link" aria-label="Tik Tok">
+                                <img src="https://res.cloudinary.com/dhbj763qc/image/upload/v1715880421/Mom_of_boys/tiktok_icon_copy_wsoikt.svg" alt="Tik Tok icon" />
+                            </a>
+                        </li>
+                        <li class="facebook">
+                            <a target="_blank" href="https://www.facebook.com/momofboysnigeria?mibextid=PlNXYD" role="link" aria-label="Facebook">
+                                <img src="https://res.cloudinary.com/dhbj763qc/image/upload/v1715880244/Mom_of_boys/facebook_icon_copy_p2kkkk.svg" alt="Facebook icon"/>
+                            </a>
+                        </li>
+                        <li class="youtube">
+                            <a target="_blank" href="https://youtube.com/@MomofBoysNigeria?si=FU0hje8baBoFGp76" role="link" aria-label="Youtube">
+                                <img src="https://res.cloudinary.com/dhbj763qc/image/upload/v1715880560/Mom_of_boys/youtube_icon_copy_idgbyi.svg" alt="Youtube icon"/>
+                            </a>
+                        </li>
+                        <li class="instagram">
+                            <a target="_blank" href="https://www.instagram.com/momofboys_ng?igsh=N280em13OHZxbnpx&utm_source=qr" role="link" aria-label="Instagram">
+                                <img src="https://res.cloudinary.com/dhbj763qc/image/upload/v1715883041/Mom_of_boys/instagram_icon_copy_vj2qdg.svg" alt="Instagram icon"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright-wrapper">
+                2024 All Rights Reserved momofboys.com
+            </div>
+        </footer>
+    </body>
+    <script>
+        const stretchTextArea = (e) => {
+            // Reset the textarea height to default to get the scroll height
+            e.target.style.height = 'auto';
+            
+            // Set the textarea height to the scroll height
+            e.target.style.height = `${e.target.scrollHeight}px`;
+
+            validateForm()
+        }
+
+        const toggleErrorDisplay = (selectors, contents, displays) => {
+            for(let i = 0; i < selectors.length; i++) {
+                const elem = document.querySelector(selectors[i]);
+                if(elem) { // Check if the element exists
+                    elem.textContent = contents[i];
+                    elem.style.display = displays[i];
+                }
+            }
+        };
+
+        const allInputs=document.querySelectorAll('input,textArea')
+        
+        const emptyInputs = () =>{
+            for(let i of allInputs){
+                i.value=''
+            }
+        }
+
+        //Empty all inputs
+        emptyInputs()
+
+        //submit button
+        const submitButton = document.querySelector('.submit-button');
+
+        const validateForm = () => {
+            
+
+            //constants
+            const validCharsRegex = /^[a-zA-Z'-]+$/;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            //Hide all errors
+            let status=true
+            toggleErrorDisplay(
+                ['.first-name-error','.last-name-error','.email-error','.message-error'],
+                ['','','',''],
+                ['none','none','none','none']
+            )
+
+            /*
+                first-name-error
+                last-name-error
+                email-error
+                message-error
+            */
+
+            const firstNameValue = document.getElementById('firstname').value.trim();
+            const lastNameValue = document.getElementById('lastname').value.trim();
+            const emailValue = document.getElementById('email').value.trim();
+            const messageValue = document.getElementById('message').value.trim();
+
+            /*Checks for the first name*/
+            if (firstNameValue === '' || !validCharsRegex.test(firstNameValue) || firstNameValue.length < 2) {
+                toggleErrorDisplay(['.first-name-error'],['Please enter a valid first name.'],['block'])
+                status=false
+            }
+            /*Checks for the last name*/
+            if (lastNameValue === '' || !validCharsRegex.test(lastNameValue) || lastNameValue.length < 2) {
+                toggleErrorDisplay(['.last-name-error'],['Please enter a valid last name.'],['block'])
+                status=false
+            }
+            /*Checks for email*/
+            if (emailValue === '' || !emailRegex.test(emailValue)) {
+                toggleErrorDisplay(['.email-error'],['Please enter a valid email address.'],['block'])
+                status=false
+            }
+            /*Checks for message*/
+            if (messageValue === '' || messageValue.length < 20) {
+                toggleErrorDisplay(['.message-error'],['Please enter a valid message description.'],['block'])
+                status=false
+            }
+            
+            /*Log the status to the console*/
+            if(status){
+                submitButton.style.display='block'
+            }else{
+                submitButton.style.display='none'
+            }
+        }
+
+        const submitMessage = () => {
+            let supportTeamMail="support@americannativeheartfoundation.com";
+            link=document.createElement("a")
+            link["href"]=`mailto:${supportTeamMail}?subject=Support Request&body=Full name: ${allInputs[0].value} ${allInputs[1].value};%0D%0AMessage: ${allInputs[3].value};%0D%0A`
+            link.click()
+
+            //Empty all inputs
+            emptyInputs()
+            //Hide the submit button
+            submitButton.style.display='none'
+        }
+    
+        /*
+        grecaptcha.ready(function() {
+          grecaptcha.execute('6LfjFdMpAAAAAJvriBarTWu5SBo4_WvA9_-Rk5ZS', {action: 'submit'}).then(function(token) {
+              // Add your logic to submit to your backend server here.
+          });
+        });
+        */
+
+    </script>
+</html>

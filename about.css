@@ -1,0 +1,275 @@
+@import url('base.css');
+
+
+/* -----------top bar section--------------- */
+.top-bar-about-link{
+  border-bottom: 4px solid #edbb1aff;
+}
+
+
+/* -----------header section--------------- */
+.header-wrapper{
+  height: 600px; 
+  position: relative;
+  margin-top: 150px;
+}
+.header-wrapper>div{
+  position: absolute;
+  top:0;
+  display: flex; flex-direction: column; 
+  align-items: center; justify-content: center;
+  color: #FFF; padding: 30px; 
+  width: 100%; height: 100%;
+
+}
+.header-wrapper h1{
+  font-family: var(--arial);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 136.023%; /* 81.614px */
+}
+.header-wrapper h1+p{
+  font-family: var(--arial);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 136.023%; /* 38.086px */ 
+  width: 100%; max-width: 500px;
+}
+
+
+/* -----------Brief--------------- */
+.brief{
+  padding: 30px; display: flex; flex-direction: column; align-items: center;
+}
+.brief h2{
+  color: #000; text-align: center;
+  font-family: var(--arial);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 125% */
+  letter-spacing: 0.2px;
+  width: 100%; max-width: 250px; padding-bottom: 50px;
+  padding-top:5px;
+  background: url("media/tilted_three_strokes.svg") right top/20px no-repeat,
+    url("media/curved_green_stroke.svg") center bottom/contain no-repeat;
+}
+
+/* description */
+.description{
+  color: #7D7D7D;
+  font-family: var(--arial);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 173%; /* 51.9px */
+  width: 100%; max-width: 1200px;
+}
+.description>p{
+  margin: auto;
+  margin-bottom: 30px;
+  max-width: 700px; 
+}
+
+
+
+/* Desc-block */
+.desc-block-image{
+  height: 250px;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+}
+.desc-block-text{
+  padding: 20px;
+  font-family: var(--arial);
+}
+.desc-block-text h3{
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 136.023%; /* 81.614px */
+  color: #2a1803ff; 
+  margin-bottom: 0px
+}
+.desc-block-text p{
+  color: #7D7D7D;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 173%; /* 51.9px */
+}
+.desc-block{
+  width: 100%; max-width: 450px; 
+  border: 1px solid var(--bs-gray-200);
+  margin-bottom: 70px; border-radius: 5px;
+}
+.desc-block:hover{
+  box-shadow: 0 4px 20px rgba(0,0,0,.1);
+}
+.desc-block-wrapper{
+  display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-evenly;
+  background-position: center 25%;
+}
+
+
+
+/* -----------mission milestone section--------------- */
+.mission-vision{
+  background: #1f1f1f; padding: 30px; margin-bottom: 40px;
+}
+.mission-vision h2{
+  color: #C2EA66;
+  font-family: var(--calibri);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px; /* 125% */
+  letter-spacing: 0.2px;
+}
+.mission-vision ul{
+  list-style-type: none;
+  font-family: var(--questrial-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 111.111% */
+  letter-spacing: 0.2px; padding: 0px;
+}
+.mission-vision li{ 
+ display: flex; gap: 10px; margin-bottom: 5px; color: #FFF;
+}
+.bullet>div{
+  width: 10px; height: 10px; border-radius: 50%;
+  background-color: #C2EA66; margin: 5px 0px 0px 0px;
+}
+
+
+/* -----------testimonials section--------------- */
+.testimonial-section{
+  padding: 30px;    
+}
+.testimonial-heading{
+  min-width: 100%; text-align: center;
+}
+.testimonial-wrapper{
+  background: var(--gray); width: 100%; max-width: 1000px; margin: auto; padding: 20px;
+  border-radius: 4px; margin-bottom: 50px;
+}
+.quote-symbol{
+ text-align: center; margin-bottom: 60px;
+}
+.testimony{
+  color: var(--dark); font-size: 20px;
+}
+.testimony-note{
+  font-family: var(--med); width: 100%;
+  max-width: 600px; margin: auto; margin-bottom: 30px
+}
+.testimony-author{
+  font-size: 20px; font-weight: bold; text-align: center;
+  margin-bottom: 30px;
+}
+.index-indicator{
+  height: 10px; display: flex;
+  justify-content: center; gap: 5px;
+}
+.index-indicator>div{
+  border-radius: 50%; width: 8px; height: 8px; background: var(--dark);
+  /*eaecf0*/
+}
+
+.stats{
+  display: flex; flex-wrap: wrap; justify-content: center;
+  padding: 30px;
+}
+.stats>div{
+  width: 100%; max-width: 400px;
+}
+.numbers{
+  font-size: 40px; font-weight: bold; color: #2c6700;
+}
+.numbers+span{
+  color: #101828; font-size: 20px; font-family: var(--med);
+}
+.numbers+span+p{
+  color: #475467; font-size: 18px; font-family: var(--med);
+}
+
+
+/* -----------contact-media section--------------- */
+.contact-media{
+  padding: 30px; display: flex; justify-content: center; flex-wrap: wrap;
+  gap: 20px;
+}
+.contact-media>div{
+  width: 100%; max-width: 300px; height: 250px; border-radius: 6px; 
+  border: 1px solid #F1F1F3;
+  background: #FCFCFD; display: flex; flex-direction: column;
+  justify-content: center; align-items: center; gap: 10%;
+  margin-bottom: 20px;
+}
+.icon-detail{
+  color: #4C4C4D;
+  text-align: center;
+  font-family: var(--be-vietnam-pro-font);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */ 
+}
+.contact-media a{
+  border-radius: 6px; width: 60px; height: 60px;
+  border: 1px solid var(--White-95, #F1F1F3); display: block;
+}
+.contact-media a img{
+  width: 80%;
+  transform: translateX(5px);
+}
+
+.mail-icon{
+  background: var(--White-97, #F7F7F8);
+}
+.telephone-icon{
+  background: var(--White-97, #F7F7F8); 
+}
+.location-icon{
+  background: var(--White-97, #F7F7F8);
+}
+
+.facebook-foot-icon{
+  background: var(--White-97, #F7F7F8) url("media/facebook_foot_icon.svg") center/80% no-repeat;
+}
+.twitter-foot-icon{
+  background: var(--White-97, #F7F7F8) url("media/twitter_foot_icon.svg") center/80% no-repeat;
+}
+.linkedin-foot-icon{
+  background: var(--White-97, #F7F7F8) url("media/linkedin_foot_icon.svg") center/80% no-repeat;
+}
+.contact-media-social-wrapper{
+  width: 100%; display: flex; justify-content: space-around;
+}
+.contact-media-social-wrapper>div{
+   border-radius: 6px; width: 60px; height: 60px;
+   border: 1px solid var(--White-95, #F1F1F3); 
+}
+.contact-media-social-wrapper>div>a{
+  width: 100%; height: 100%; 
+}
+
+
+
+@media screen and (min-width:912px){
+  /* ----------testimonials-------------- */
+  .stats{
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width:1024px){
+     /* ----------mission milestone-------------- */
+  .mission-vision{
+    display: flex; justify-content: space-between; gap: 70px;
+  }
+
+}

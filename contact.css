@@ -52,7 +52,8 @@
     overflow: hidden;
 }
 .form-backdrop>img{
-    transform: translateY(-25px)
+    transform: translateY(-30px);
+    
 }
 .contact-form-wrapper{
     padding-top: 20px;
